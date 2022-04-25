@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\DomainLayer\DomainLayer.csproj" />
+    <ProjectReference Include="..\..\src\DataLayer.EFCore\DataLayer.EFCore.csproj" />
     <ProjectReference Include="..\..\src\DataLayer\DataLayer.csproj" />
   </ItemGroup>
 
