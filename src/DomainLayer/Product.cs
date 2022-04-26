@@ -1,10 +1,9 @@
-﻿using System.Collections.Generic;
-
-namespace DomainLayer
+﻿namespace DomainLayer
 {
     public class Product
     {
         public int Id { get; set; }
-        public IEnumerable<char> Name { get; set; }
+        public string Name { get; set; }
+        public int QuantityInStock { get; set; }
     }
 }

@@ -21,6 +21,7 @@ namespace DomainLayer.Services
                 {
                     Id = p.Id,
                     Name = p.Name,
+                    QuantityInStock = p.QuantityInStock,
                 }
             );
             return products;
