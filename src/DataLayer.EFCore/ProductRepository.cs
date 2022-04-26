@@ -3,7 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace DataLayer.EFCore
 {
-    public class ProductRepository
+    public class ProductRepository : IProductRepository
     {
         private ProductContext context;
 
