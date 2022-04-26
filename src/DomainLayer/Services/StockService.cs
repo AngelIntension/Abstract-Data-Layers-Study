@@ -3,7 +3,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace DomainLayer.Services
 {
-    public class StockService
+    public class StockService : IStockService
     {
         private readonly IProductRepository repository;
 
@@ -23,7 +23,7 @@ namespace DomainLayer.Services
         public int RemoveStock(int productId, int amount)
         {
             var product = repository.FindById(productId);
-            if(amount > product.QuantityInStock)
+            if (amount > product.QuantityInStock)
             {
                 throw new NotEnoughStockException(quantityInStock: product.QuantityInStock, amountToRemove: amount);
             }

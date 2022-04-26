@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace DomainLayer.Services
 {
-    public class ProductService
+    public class ProductService : IProductService
     {
         private readonly IProductRepository repository;
 
