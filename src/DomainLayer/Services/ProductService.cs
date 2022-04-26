@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace DomainLayer.Services
 {
-    public class ProductService
+    public class ProductService : IProductService
     {
         private readonly IProductRepository repository;
 
@@ -21,6 +21,7 @@ namespace DomainLayer.Services
                 {
                     Id = p.Id,
                     Name = p.Name,
+                    QuantityInStock = p.QuantityInStock,
                 }
             );
             return products;
