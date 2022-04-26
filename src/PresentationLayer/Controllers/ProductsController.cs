@@ -9,7 +9,7 @@ namespace PresentationLayer.Controllers
     [Route("[controller]")]
     public class ProductsController : ControllerBase
     {
-        private IProductService productService;
+        private readonly IProductService productService;
 
         public ProductsController([NotNull] IProductService productService)
         {
