@@ -7,7 +7,7 @@ namespace DomainLayer.Services
 {
     public class ProductService
     {
-        private IProductRepository repository;
+        private readonly IProductRepository repository;
 
         public ProductService([NotNull] IProductRepository repository)
         {
